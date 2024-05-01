@@ -1,2 +1,41 @@
+
 # QuickMark
-QuickMark is a Python script that automatically adds watermarks to all images within a specified directory. It allows customization of the watermark text, position, and transparency, making it ideal for copyright protection and branding purposes.
+
+## 概要
+このリポジトリには、指定されたディレクトリ内のすべての画像にウォーターマークを追加するPythonスクリプトが含まれています。画像のウォーターマーク追加を自動化することで、著作権の表示やブランディングを容易に行うことができます。
+
+## 主な機能
+- 指定したディレクトリ内の画像にウォーターマークを追加します。
+- ウォーターマークのテキスト、位置、透明度をカスタマイズ可能です。
+- 処理された画像は新しいサブディレクトリに保存されます。
+
+## 必要条件
+- Python 3.x
+- Pillowライブラリ
+
+## セットアップ
+以下の手順に従って、必要なライブラリをインストールしてください:
+
+```bash
+pip install Pillow
+```
+
+## 使用方法
+1. スクリプトが存在するディレクトリに移動します。
+2. 以下のコマンドを実行してください:
+
+```bash
+python quickmark.py
+```
+
+3. 指示に従って、画像が保存されているディレクトリを入力します。
+
+## ライセンス
+このプロジェクトは[MITライセンス](LICENSE)の下で公開されています。詳細は`LICENSE`ファイルを参照してください。
+
+## 作者
+Murasan201  
+[https://murasan-net.com/](https://murasan-net.com/)
+
+## 謝辞
+このプロジェクトに貢献してくれたすべての人々に感謝します.
