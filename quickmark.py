@@ -57,7 +57,8 @@ def process_directory(directory_path):
     # ディレクトリ内の全ファイルを処理
     for filename in os.listdir(directory_path):
         file_path = os.path.join(directory_path, filename)
-        if os.path.isfile(file_path) and any(file_path.endswith(ext) for ext in IMAGE_EXTENSIONS):
+        file_ext = os.path.splitext(filename)[1].lower()  # 拡張子を小文字で取得
+        if os.path.isfile(file_path) and any(file_ext == ext for ext in IMAGE_EXTENSIONS):
             output_path = os.path.join(output_directory, f"wm_{filename}")
             add_watermark_with_shadow(file_path, output_path)
             print(f"Processed {filename}")
